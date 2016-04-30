@@ -6,6 +6,7 @@ def rename_files():
 
   for file_name in file_list:
     os.rename(file_name, file_name.translate(None, "0123456789"))
+    print(file_name+" has been changed")
   os.chdir(saved_path)
 rename_files()
 
